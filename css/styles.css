@@ -35,8 +35,7 @@
 /* styles logo */
 .logo {
 	display: inline-block;
-	margin-top: 24px;
-	margin-bottom: 25px;
+
 	font-family: "Raleway", sans-serif;
 	font-weight: 700;
 	font-size: 26px;
@@ -51,6 +50,11 @@
 
 .logo-footer {
 	color: var(--primare-bg-color);
+}
+
+.logo-up {
+	padding-top: 24px;
+	margin-bottom: 25px;
 }
 
 /* site-nav */
@@ -84,6 +88,7 @@
 .hero-title {
 	margin-top: 0px;
 	margin-bottom: 30px;
+
 	font-weight: 900;
 	font-size: 44px;
 	line-height: 1.37;
@@ -96,12 +101,13 @@
 
 .section {
 	padding-top: 94px;
-	padding-bottom: 50px;
+	padding-bottom: 94px;
 }
 
 .section-title {
 	margin-top: 0px;
-	margin-bottom: 0px;
+	margin-bottom: 50px;
+
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 1.17;
@@ -115,6 +121,12 @@
 	line-height: 1.71;
 	letter-spacing: 0.03em;
 }
+
+/* Our work styles */
+/* .our-work-img {
+	padding-top: 0px;
+	padding-bottom: 0;
+} */
 
 /* Feature styles */
 
@@ -177,7 +189,6 @@
 }
 
 .button {
-	margin-bottom: ;
 	font-family: inherit;
 	font-weight: 500;
 	font-size: 16px;
@@ -195,6 +206,10 @@
 }
 
 /* Styles portfolio.html */
+/* .filter-nav {
+	margin-top: 0;
+	margin-bottom: 0;
+} */
 .portfolio-img {
 	margin-top: 0;
 	margin-bottom: 20px;
@@ -203,6 +218,7 @@
 .portfolio-title {
 	margin-top: 0;
 	margin-bottom: 4px;
+
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 2;
@@ -213,6 +229,7 @@
 .portfolio-text {
 	margin-top: 0;
 	margin-bottom: 0;
+
 	padding-bottom: 20px;
 	font-size: 16px;
 	line-height: 1.88;
@@ -221,12 +238,18 @@
 
 /* Styles footer */
 
+.logo-down {
+	padding-top: 60px;
+	margin-bottom: 20px;
+}
+
 .logo-footer {
 	color: var(--primare-bg-color);
 }
 
 .footer {
 	background-color: var(--hero-bg-color);
+	padding-bottom: 60px;
 }
 
 .footer-nav {
@@ -238,8 +261,15 @@
 
 .footer-nav-address {
 	color: var(--primare-bg-color);
+	margin-bottom: 9px;
 }
 
-.footer-nav-contacts {
+.footer-nav-phone,
+.footer-nav-mail {
 	color: rgba(255, 255, 255, 0.6);
+	margin-bottom: 9px;
+}
+
+.footer-nav-phone {
+	margin-bottom: 0px;
 }
