@@ -119,12 +119,12 @@
 	color: var(--accent-color);
 }
 
-.site-nav :hover,
-.site-nav :focus,
-.auth-nav :hover,
-.auth-nav :focus,
-.footer-nav :hover,
-.footer-nav :hover {
+.nav-link:hover,
+.nav-link:focus,
+.auth-nav-link:hover,
+.auth-nav-link:focus,
+.footer-nav .link:hover,
+.footer-nav .link:hover {
 	color: var(--accent-color);
 }
 
@@ -266,6 +266,10 @@
 	border: transparent;
 	text-align: center;
 	cursor: pointer;
+}
+.hero-buttom:hover {
+	background-color: #188ce8;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .filter-nav {
 	display: flex;
