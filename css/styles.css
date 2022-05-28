@@ -348,6 +348,10 @@ img {
 	padding: 20px 24px;
 }
 
+.portfolio-img {
+	margin-right: 0;
+}
+
 .portfolio-title {
 	margin: 0 0 4px;
 
