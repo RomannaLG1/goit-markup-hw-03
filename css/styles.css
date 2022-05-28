@@ -6,6 +6,8 @@
 	--hero-bg-color: #2f303a;
 	--secondary-bg-color: #f5f4fa;
 	--secondary-accent-color: #000000;
+	--card-set-gap: 30px;
+	--section-set-gap: 94px;
 }
 
 .page {
@@ -25,13 +27,24 @@
 }
 
 .container {
-	margin-left: auto;
-	margin-right: auto;
-
 	width: 1200px;
 	padding: 0px 15px;
-
+	margin-left: auto;
+	margin-right: auto;
 	/* outline: 2px solid tomato; */
+}
+
+h1,
+h2,
+h3,
+p {
+	margin: 0;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
 }
 
 /* -------------------------styles logo------------------------- */
@@ -69,7 +82,7 @@
 
 .contacts-nav {
 	display: flex;
-	margin-left: 331px;
+	margin-left: auto;
 }
 
 /* .site-nav-item:not(:last-child) {
@@ -119,8 +132,7 @@
 	text-align: center;
 }
 .hero-title {
-	margin-top: 0px;
-	margin-bottom: 30px;
+	margin: 0 0 var(--card-set-gap);
 	text-align: center;
 
 	font-weight: 900;
@@ -134,13 +146,11 @@
 /* -------------------------Section styles------------------------- */
 
 .section {
-	padding-top: 94px;
-	/* padding-bottom: 94px; */
+	padding-top: var(--section-set-gap);
 }
 
 .section-title {
-	margin-top: 0px;
-	margin-bottom: 50px;
+	margin: 0 0 50px;
 
 	font-weight: 700;
 	font-size: 36px;
@@ -174,7 +184,11 @@
 	display: flex;
 }
 .feature-list-item {
+	margin-right: var(--card-set-gap);
 	width: 270px;
+}
+.feature-list-item:nth-child(4n) {
+	margin-right: 0px;
 }
 
 .feature-title {
@@ -189,19 +203,22 @@
 
 /* -------------------------Work styles------------------------- */
 .work {
-	padding-bottom: 90px;
+	padding-bottom: var(--section-set-gap);
 }
 .work-list {
 	display: flex;
 }
 .work-list .work-flex + .work-flex {
-	margin-left: 30px;
+	margin-left: var(--card-set-gap);
 }
+/* .work-img {
+	display: block;
+} */
 
-/* Team styles */
+/* -------------------------Team styles------------------------- */
 
 .team {
-	padding-bottom: 94px;
+	padding-bottom: var(--section-set-gap);
 	background-color: var(--secondary-bg-color);
 }
 
@@ -217,18 +234,15 @@
 	background-color: var(--primare-bg-color);
 }
 .team-list .team-bg + .team-bg {
-	margin-left: 30px;
+	margin-left: var(--card-set-gap);
 }
 
 .team-img {
-	margin-top: 0;
-
-	margin-bottom: 30px;
+	margin: 0 0 var(--card-set-gap);
 }
 
 .team-title {
-	margin-top: 0;
-	margin-bottom: 10px;
+	margin: 0 0 10px;
 
 	font-weight: 500;
 	font-size: 16px;
@@ -238,9 +252,7 @@
 	color: var(--title-text-color);
 }
 .team-text {
-	margin-top: 0;
-	margin-bottom: 0px;
-	padding-bottom: 30px;
+	padding-bottom: var(--card-set-gap);
 
 	font-size: 16px;
 	line-height: 1.19;
@@ -250,6 +262,10 @@
 
 /* -------------------------Button styles------------------------- */
 .hero-buttom {
+	padding: 10px 32px;
+	border-radius: 4px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
 	font-family: inherit;
 	font-weight: 700;
 	font-size: 16px;
@@ -259,9 +275,6 @@
 	color: var(--primare-bg-color);
 	background-color: var(--accent-color);
 
-	border-radius: 4px;
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-	padding: 10px 32px;
 	min-width: 200px;
 	border: transparent;
 	text-align: center;
@@ -308,25 +321,35 @@
 }
 
 /* -------------------------Styles portfolio.html------------------------- */
+
 .filter {
 	padding-top: 50px;
 }
 .portfolio {
+	padding: 0;
+	margin: 0;
+
 	display: flex;
 	flex-wrap: wrap;
-	padding-bottom: 94px;
+	margin-left: calc(-1 * var(--card-set-gap));
+	margin-top: calc(-1 * var(--card-set-gap));
+
+	padding-bottom: var(--section-set-gap);
 }
+
 .portfolio-flex {
-	width: 370px;
-	margin: 0 30px 30px 0;
+	flex-basis: calc(100% / 3 - var(--card-set-gap));
+	margin-left: var(--card-set-gap);
+	margin-top: var(--card-set-gap);
+
 	outline: 1px solid var(--secondary-bg-color);
+}
+.card-content {
+	padding: 20px 24px;
 }
 
 .portfolio-title {
-	margin-top: 0;
-	margin-bottom: 4px;
-	padding-top: 20px;
-	padding-left: 24px;
+	margin: 0 0 4px;
 
 	font-weight: 700;
 	font-size: 18px;
@@ -336,12 +359,6 @@
 }
 
 .portfolio-text {
-	margin-top: 0;
-	margin-bottom: 0;
-	padding-left: 24px;
-	padding-bottom: 20px;
-
-	padding-bottom: 20px;
 	font-size: 16px;
 	line-height: 1.88;
 	letter-spacing: 0.03em;
@@ -379,7 +396,3 @@
 	color: rgba(255, 255, 255, 0.6);
 	margin-bottom: 9px;
 }
-
-/* .footer-nav-phone {
-	margin-bottom: 0px;
-} */
