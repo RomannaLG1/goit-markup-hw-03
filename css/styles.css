@@ -341,7 +341,7 @@ img {
 	flex-basis: calc(100% / 3 - var(--card-set-gap));
 	margin-left: var(--card-set-gap);
 	margin-top: var(--card-set-gap);
-
+	max-width: 370px;
 	outline: 1px solid var(--secondary-bg-color);
 }
 .card-content {
