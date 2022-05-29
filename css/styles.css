@@ -346,7 +346,6 @@ img {
 	flex-basis: calc(100% / 3 - var(--card-set-gap));
 	margin-left: var(--card-set-gap);
 	margin-top: var(--card-set-gap);
-	max-width: 370px;
 }
 .card-content {
 	padding: 20px 24px;
