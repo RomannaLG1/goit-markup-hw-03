@@ -187,7 +187,7 @@ img {
 
 /* -------------------------Feature styles------------------------- */
 .feature {
-	padding: 94px 0;
+	padding: var(--section-set-gap) 0;
 }
 .feature-list {
 	display: flex;
@@ -212,7 +212,7 @@ img {
 
 /* -------------------------Work styles------------------------- */
 .work {
-	padding-bottom: var(--section-set-gap);
+	padding-bottom: var(--section-set-gap) 0;
 }
 .work-list {
 	display: flex;
@@ -329,7 +329,7 @@ img {
 /* -------------------------Styles portfolio.html------------------------- */
 
 .filter {
-	padding: var(--section-set-gap);
+	padding: var(--section-set-gap) 0;
 	border-width: 1px 0 0;
 	border-style: solid;
 	border-color: #ececec;
@@ -405,7 +405,11 @@ img {
 
 .footer-nav-contact {
 	color: rgba(255, 255, 255, 0.6);
-	margin-top: 9px;
+	
+}
+
+.footer-nav-item:not(:last-child) {
+	margin-bottom: 9px;
 }
 
 
